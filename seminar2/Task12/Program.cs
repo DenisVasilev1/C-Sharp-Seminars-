@@ -11,27 +11,14 @@ int digit1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите второе число - ");
 int digit2 = Convert.ToInt32(Console.ReadLine());
+
  if (digit1 % digit2 == 0)
  {
     Console.WriteLine("Кратны");
  }
 else
 {
-    Console.WriteLine($"Остаток от деления -  {digit1 % digit2}");
+    Console.WriteLine($"Не кратно, остаток от деления -  {digit1 % digit2}");
 }
 
 
-
-
-
-//int digit2 = number % 10;
-//int digit1 = number / 100;
-//Console.WriteLine($"Искомое число: {digit1}{digit2}");
-//if (digit1 > digit2)
-//{
-//   Console.WriteLine(digit1);
-//}
-//else
-//{
-//    Console.WriteLine(digit2);
-//}
