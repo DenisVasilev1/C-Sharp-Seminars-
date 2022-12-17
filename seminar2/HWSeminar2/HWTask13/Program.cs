@@ -11,27 +11,25 @@ int number1;
 int number2;
 int number3;
 
-if (digit1 > 999 && digit1 < 1000000000)
+while (digit1 > 999 && digit1 < 1000000000)
 {
     number2 = digit1 / 10;
-    if (number2 < 1000 && number2 > 99)
+     while (number2 < 1000 && number2 > 99)
+        {
+             number3 = number2 % 10;
+             Console.WriteLine($"Третья цифра {number3}");
+        }
+
+}
+
+
+    if (digit1 < 1000 && digit1 > 99)
+        {
+            number1 = digit1 % 10;
+            Console.WriteLine($"Третья цифра {number1}");
+        }
+
+    else
     {
-        number3 = number2 % 10;
-        Console.WriteLine($"Третья цифра {number3}");
+        Console.WriteLine("Третьей цифры нет");
     }
-
-}
-else
-
-if (digit1 < 1000 && digit1 > 99)
-{
-    number1 = digit1 % 10;
-    Console.WriteLine($"Третья цифра {number1}");
-}
-
-
-else
-{
-    Console.WriteLine("Третьей цифры нет");
-}
-
