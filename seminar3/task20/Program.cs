@@ -20,6 +20,6 @@ double res1 = Math.Pow(x-x1, 2);
 double res2 = Math.Pow(y-y1, 2);
 double sum = res1 + res2;
 double resfin = Math.Sqrt(sum);
-Console.WriteLine();
+Console.WriteLine( );
 Console.WriteLine($"{resfin:f1}");
 
