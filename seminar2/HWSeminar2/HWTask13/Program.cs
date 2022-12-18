@@ -11,7 +11,7 @@ int number1;
 int number2;
 int number3;
 
-if (digit1 > 999 && digit1 < 1000000000)
+for (digit1 > 999 && digit1 < 1000000000)
 {
     number1 = digit1 / 10;
      //if (number2 < 1000 && number2 > 99)
