@@ -6,30 +6,22 @@
 
 
 Console.WriteLine("Введите число - ");
-int digit1 = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 int number1;
-int number2;
-int number3;
 
-for (digit1 > 999 && digit1 < 1000000000)
+for (int i = 1000; i < a; i++)
 {
-    number1 = digit1 / 10;
-     //if (number2 < 1000 && number2 > 99)
-       // {
-      //       number3 = number2 % 10;
-      //       Console.WriteLine($"Третья цифра {number3}");
-      //  }
+    a = a / 10;
+} 
 
+
+if (a < 1000 && a > 99)
+{
+    number1 = a % 10;
+    Console.WriteLine($"Третья цифра {number1}");
 }
 
-
-else if (digit1 < 1000 && digit1 > 99)
-    {
-    number1 = digit1 % 10;
-    Console.WriteLine($"Третья цифра {number1}");
-    }
-
 else
-    {
-        Console.WriteLine("Третьей цифры нет");
-    }
+{
+    Console.WriteLine("Третьей цифры нет");
+}
