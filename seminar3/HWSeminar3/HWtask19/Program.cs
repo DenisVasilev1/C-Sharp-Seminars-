@@ -5,24 +5,30 @@
 // 23432 -> да
 
 
-Console.WriteLine("Введите число N");
+Console.WriteLine("Введите пятизначное число");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(" ");
+int a;
+int b;  
+int c;
+int d;
 
-for (n < 100000; n > 9999)
-{
-    
-
-
-
-
-    Console.WriteLine("Число N должно быть больше 0");
-}
-else
-{
-    for (int i = 1; i <= n; i++)
+if (n < 100000 && n > 9999)
     {
-        Console.WriteLine(i * i * i);
+        a = n / 10000;
+        b = n / 1000 - (a * 10);
+        c = (n % 100) / 10;
+        d = n % 10;
+        if (a == d && b == c)
+             {
+             Console.WriteLine("Да");
+             }
+        else 
+        {
+            Console.WriteLine("Нет");
+        }
     }
 
-}
+else
+    {
+    Console.WriteLine("это не пятизначное число");
+    }
