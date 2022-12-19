@@ -35,8 +35,8 @@ int number = GetNomber("Введите число: ");
 bool isCorrect = Validate(number);
 if (isCorrect == true)
 {
-    int sum = Sum1toA(number);
-    Console.WriteLine($"Сумма чисел от 1 до {number} = {sum}");
+    int suma = Sum1toA(number);
+    Console.WriteLine($"Сумма чисел от 1 до {number} = {suma}");
 }
 else
 {
