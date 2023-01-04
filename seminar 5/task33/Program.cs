@@ -32,14 +32,14 @@ bool isNumberInArray(int[] array, int findNumber)
 }
 
 const int SIZE = 12; //создание массива на 12 элементов
-const int LEFTRANGE = -200;
-const int RIGHTRANGE = 200;
+const int LEFTRANGE = -10;
+const int RIGHTRANGE = 10;
 const int FINDNUMBER = 5;
 
 int[] arr = GetRandomArray(SIZE, LEFTRANGE, RIGHTRANGE);
 
 Console.WriteLine(string.Join(", ", arr));
-bool result = isNumberInArray(arr, FINDNUMBER);
+bool result = isNumberInArray(arr, FINDNUMBER);// bool - тип данных
 if (result == true)
 {
     Console.WriteLine("Да");
@@ -48,10 +48,5 @@ else
 {
     Console.WriteLine("Нет");
 }
-
-
-
-
-
 
 
